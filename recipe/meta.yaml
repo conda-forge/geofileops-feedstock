@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2a2" %}
 
 
 package:
