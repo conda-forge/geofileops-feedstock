@@ -3,7 +3,7 @@ cdt_name:
 channel_sources:
 - conda-forge,defaults
 channel_targets:
-- conda-forge geofileops_dev
+- conda-forge geofileops_rc
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 zip_keys:
