@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - geopandas >=0.8.2
+    - geopandas >=0.9
     - libspatialite >=5.0
     - psutil
     - pygeos
