@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.3.0b1" %}
+{% set version = "0.3.1b1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geofileops-{{ version }}.tar.gz
-  sha256: 80a6d3fc1afa242fb0089540b9e3aa75ece194ee86635ab1f65f6a3e83def8e6
+  sha256: 4b3fbb0d0ed607981f7ed2f2e3e195a9695481f9ef33a09191c1eb1e1569885b
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - geopandas >=0.8.2
+    - geopandas >=0.10
     - libspatialite >=5.0
     - psutil
     - pygeos
