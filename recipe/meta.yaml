@@ -42,7 +42,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/theroggy/geofileops
+  home: https://github.com/geofileops/geofileops
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -52,7 +52,7 @@ about:
     easy. Accomplishes this by using geopandas, gdal and ogr2ogr under the hood 
     to perform geospatial operations on files by using all available cores.
   doc_url: https://geofileops.readthedocs.io/
-  dev_url: https://github.com/theroggy/geofileops/
+  dev_url: https://github.com/geofileops/geofileops/
 
 extra:
   recipe-maintainers:
