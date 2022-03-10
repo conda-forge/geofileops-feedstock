@@ -1,7 +1,7 @@
 About geofileops
 ================
 
-Home: https://github.com/theroggy/geofileops
+Home: https://github.com/geofileops/geofileops
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geofileops-feed
 
 Summary: Package to do spatial operations on geo files.
 
-Development: https://github.com/theroggy/geofileops/
+Development: https://github.com/geofileops/geofileops/
 
 Documentation: https://geofileops.readthedocs.io/
 
