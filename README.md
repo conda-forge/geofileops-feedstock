@@ -14,7 +14,7 @@ Development: https://github.com/geofileops/geofileops/
 Documentation: https://geofileops.readthedocs.io/
 
 GeofileOps is a library to make spatial operations on geo files fast and
-easy. Accomplishes this by using geopandas, gdal and ogr2ogr under the hood
+easy. Accomplishes this by using geopandas and gdal under the hood
 to perform geospatial operations on files by using all available cores.
 
 
