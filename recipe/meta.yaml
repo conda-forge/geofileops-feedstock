@@ -1,6 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.3.1" %}
-
+{% set version = "0.3.2a1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geofileops-{{ version }}.tar.gz
-  sha256: 988c2a48b3cc896ee260abfadb0a1efa132e9ce44be9fd79f418dde215ccc1d4
+  sha256: 4a1f4038ee6579d0e44990b1e4fa042b069f3734332e38dda4f3082d4b07020b
 
 build:
   number: 0
@@ -20,6 +19,7 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - cloudpickle
     - geopandas >=0.10
     - libspatialite >=5.0
     - psutil
@@ -50,7 +50,7 @@ about:
   summary: Package to do spatial operations on geo files.
   description: |
     GeofileOps is a library to make spatial operations on geo files fast and 
-    easy. Accomplishes this by using geopandas, gdal and ogr2ogr under the hood 
+    easy. Accomplishes this by using geopandas and gdal under the hood 
     to perform geospatial operations on files by using all available cores.
   doc_url: https://geofileops.readthedocs.io/
   dev_url: https://github.com/geofileops/geofileops/
