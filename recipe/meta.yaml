@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geofileops-{{ version }}.tar.gz
-  sha256: 15566682081a3481b7b8db72b39e46d32301ef54131eed2fe1410e72a52e7dac8
+  sha256: 15566682081a3481b7b8db72b39e46d32301ef54131eed2fe1410e72a52e7dac
 
 build:
   number: 0
