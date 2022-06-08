@@ -20,13 +20,18 @@ requirements:
     - python >=3.8
   run:
     - cloudpickle
+    - fiona
+    - gdal
     - geopandas >=0.10
     - libspatialite >=5.0
+    - numpy
+    - pandas
     - psutil
     - pygeos
     - pyproj
     - python >=3.8
-
+    - shapely
+    
 test:
   imports:
     - geofileops
