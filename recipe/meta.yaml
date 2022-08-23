@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geofileops-{{ version }}.tar.gz
-  sha256: bc4af2041e25d86a909907e91743cfc29d2ae88eb229a9994339084423812cf5
+  sha256: 47513728c052dd13f65f1181ecab091860080dd0cba5af325f213fd29739641a
 
 build:
   number: 0
@@ -22,15 +22,17 @@ requirements:
     - cloudpickle
     - fiona
     - gdal
-    - geopandas >=0.10
+    - geopandas >=0.11
     - libspatialite >=5.0
     - numpy
     - pandas
     - psutil
     - pygeos
+    - pyogrio
     - pyproj
     - python >=3.8
     - shapely
+    - topojson
     
 test:
   imports:
