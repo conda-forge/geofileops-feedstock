@@ -1,11 +1,11 @@
-About geofileops
-================
+About geofileops-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geofileops-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/geofileops/geofileops
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geofileops-feedstock/blob/main/LICENSE.txt)
 
 Summary: Package to do spatial operations on large geo files.
 
