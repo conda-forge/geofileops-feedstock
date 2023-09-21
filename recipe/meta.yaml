@@ -10,7 +10,7 @@ source:
   sha256: 112d98ce5265cacd50c9b8740843e80a7a42302043200a122cac073d8dde83d7
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,9 +21,9 @@ requirements:
   run:
     - cloudpickle
     - fiona
-    - gdal
+    - gdal <3.7.2
     - geopandas >=0.11,<0.14
-    - libspatialite >=5.0
+    - libspatialite >=5.0,<5.1
     - numpy
     - pandas
     - psutil
