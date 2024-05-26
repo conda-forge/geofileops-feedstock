@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.0.post3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 488153c3cd1fcd40637dcfec62cddbe0b4f013a880b8c8c377f6e3668a50b429
+  sha256: 1585e4f083c2922a4b8cf2a6782f9406d50d9a70d1a0a22ffe29938a536212ed
 
 build:
   number: 0
