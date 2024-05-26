@@ -38,12 +38,12 @@ test:
   imports:
     - geofileops
     - geofileops.util
-  requires:
-    - pytest
-  source_files:
-    - tests
-  commands:
-    - pytest tests
+  #requires:
+  #  - pytest
+  #source_files:
+  #  - tests
+  #commands:
+  #  - pytest tests  # Test data files are not included
   #commands:
   #  - pip check  # Remove pip check till geopandas 1 is released 
   #requires:
