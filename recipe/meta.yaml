@@ -44,10 +44,10 @@ test:
     - tests
   commands:
     - pytest tests
-  commands:
-    - pip check
-  requires:
-    - pip
+  #commands:
+  #  - pip check  # Remove pip check till geopandas 1 is released 
+  #requires:
+  #  - pip
 
 about:
   home: https://github.com/geofileops/geofileops
