@@ -33,7 +33,7 @@ requirements:
     - pyproj
     - shapely >=2,<2.1
     - topojson
-    
+
 test:
   imports:
     - geofileops
