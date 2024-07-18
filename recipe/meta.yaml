@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.9.0.post4" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e1b453665f37268d930577db7fc04e0d76170ef332dd1670f0023bcdde0a81b0
+  sha256: bd49bcad831238308df6a223913ac7f6e4ba6060a7aa860e289441349a6d1e7b
 
 build:
   number: 0
@@ -32,8 +32,7 @@ requirements:
     - pyogrio >=0.5
     - pyproj
     - shapely >=2,<2.1
-    - topojson
-    
+
 test:
   imports:
     - geofileops
@@ -57,7 +56,7 @@ about:
   summary: Python toolbox to process large vector files faster.
   description: |
     GeofileOps is a python library that makes spatial operations on large vector files
-    faster. It accomplishes this by mainly by parallelizing the processing as much as
+    faster. It accomplishes this mainly by parallelizing the processing as much as
     possible. Under the hood, it uses gdal, spatialite and geopandas.
   doc_url: https://geofileops.readthedocs.io/
   dev_url: https://github.com/geofileops/geofileops/
