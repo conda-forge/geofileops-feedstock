@@ -14,7 +14,7 @@ Development: https://github.com/geofileops/geofileops/
 Documentation: https://geofileops.readthedocs.io/
 
 GeofileOps is a python library that makes spatial operations on large vector files
-faster. It accomplishes this by mainly by parallelizing the processing as much as
+faster. It accomplishes this mainly by parallelizing the processing as much as
 possible. Under the hood, it uses gdal, spatialite and geopandas.
 
 
