@@ -32,6 +32,7 @@ requirements:
     - pyogrio >=0.5
     - pyproj
     - shapely >=2,<2.1
+    - sqlite <3.49  # Temporary, remove when geofileops 0.10 is released
 
 test:
   requires:
