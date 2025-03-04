@@ -10,7 +10,7 @@ source:
   sha256: bd49bcad831238308df6a223913ac7f6e4ba6060a7aa860e289441349a6d1e7b
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,7 +32,7 @@ requirements:
     - pyogrio >=0.5
     - pyproj
     - shapely >=2,<2.1
-    - sqlite <3.49  # Temporary, remove when geofileops 0.10 is released
+    - sqlite >3.40,<3.49  # >3.40: needed for python 3.11.11, <3.49: temporary, remove when geofileops 0.10 is released
 
 test:
   requires:
