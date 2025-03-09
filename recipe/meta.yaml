@@ -10,7 +10,7 @@ source:
   sha256: bd49bcad831238308df6a223913ac7f6e4ba6060a7aa860e289441349a6d1e7b
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,10 +18,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
     - cloudpickle
-    - gdal >=3.6.3,<3.10
+    - gdal >=3.6.3,<3.11
     - geopandas-base >=0.12,<1.1
     - libspatialite >=5.0
     - numpy
