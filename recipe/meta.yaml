@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bd49bcad831238308df6a223913ac7f6e4ba6060a7aa860e289441349a6d1e7b
+  sha256: 24039d827bc3e39f138efd9cf24a54c21fa5a7c6e69eae14f4ac58d8ce8207b0
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -33,7 +33,7 @@ requirements:
     - pyogrio >=0.5
     - pyproj
     - shapely >=2,<2.1
-    - sqlite >3.40,<3.49  # >3.40: needed for python 3.11.11, <3.49: temporary, remove when geofileops 0.10 is released
+    - sqlite >3.40  # >3.40: needed for python 3.11.11
 
 test:
   requires:
