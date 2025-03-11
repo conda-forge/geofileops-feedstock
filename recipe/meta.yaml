@@ -20,20 +20,20 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - python>={{ python_min }}
+    - python >={{ python_min }}
     - cloudpickle
-    - gdal>=3.6.3,<3.11
-    - geopandas-base>=0.12,<1.1
-    - libspatialite>=5.0
+    - gdal >=3.6.3,<3.11
+    - geopandas-base >=0.12,<1.1
+    - libspatialite >=5.0
     - numpy
     - packaging
     - pandas
     - psutil
-    - pygeoops>=0.4,<0.5
-    - pyogrio>=0.5
+    - pygeoops >=0.4,<0.5
+    - pyogrio >=0.5
     - pyproj
-    - shapely>=2,<2.1
-    - sqlite>3.40  # >3.40: needed for python 3.11.11
+    - shapely >=2,<2.1
+    - sqlite >3.40  # >3.40: needed for python 3.11.11
 
 test:
   requires:
