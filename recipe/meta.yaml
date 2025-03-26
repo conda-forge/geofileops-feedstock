@@ -1,5 +1,6 @@
 {% set name = "geofileops" %}
-{% set version = "0.9.2" %}
+{% set version = "0.10.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24039d827bc3e39f138efd9cf24a54c21fa5a7c6e69eae14f4ac58d8ce8207b0
+  sha256: 88035c609bd2ce7683860d7e9a93f3f9a7e61293578c2715361ecdfccb025155
 
 build:
   number: 0
@@ -30,7 +31,7 @@ requirements:
     - pandas
     - psutil
     - pygeoops >=0.4,<0.5
-    - pyogrio >=0.5
+    - pyogrio >=0.7
     - pyproj
     - shapely >=2,<2.1
     - sqlite >3.40  # >3.40: needed for python 3.11.11
