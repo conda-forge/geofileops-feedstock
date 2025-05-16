@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 88035c609bd2ce7683860d7e9a93f3f9a7e61293578c2715361ecdfccb025155
+  sha256: f62bdb7e548ef65d3397263cc0f6033fbc10f8b1b1cfc442c5b7fac0286b2b18
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,17 +23,17 @@ requirements:
   run:
     - python >={{ python_min }}
     - cloudpickle
-    - gdal >=3.6.3,<3.11
-    - geopandas-base >=0.12,<1.1
+    - gdal >=3.6.3
+    - geopandas-base >=0.12
     - libspatialite >=5.0
     - numpy
     - packaging
     - pandas
     - psutil
-    - pygeoops >=0.4,<0.5
+    - pygeoops >=0.4
     - pyogrio >=0.7
     - pyproj
-    - shapely >=2,<2.1
+    - shapely >=2
     - sqlite >3.40  # >3.40: needed for python 3.11.11
 
 test:
