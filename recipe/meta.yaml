@@ -1,5 +1,5 @@
 {% set name = "geofileops" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2b83e0133119015886968aff8d8ee3480a1d2b60216d0ed27c7df4e193bcb34c
+  sha256: db4e962b1459423979146b259645bef949cbadec7dd6be26b1ff23c106718b32
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - libspatialite >=5.1
     - numpy
     - packaging
-    - pandas <3.0
+    - pandas
     - psutil
     - pygeoops >=0.4
     - pyogrio >=0.8
